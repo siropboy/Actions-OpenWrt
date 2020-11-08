@@ -47,9 +47,9 @@ rm -rf ./package/lean/v2ray
 rm -rf ./package/lean/v2ray-plugin
 rm -rf ./package/lean/luci-app-netdata
 rm -rf ./package/lean/luci-theme-opentomcat
-#rm -rf ./feeds/diy/autocore
+rm -rf ./package/diy/autocore
 #rm -rf ./feeds/diy/default-settings
-rm -rf ./package/lean/autocore
+#rm -rf ./package/lean/autocore
 rm -rf ./package/lean/default-settings
 #curl -fsSL https://raw.githubusercontent.com/siropboy/other/master/patch/autocore/files/x86/index.htm > package/lean/autocore/files/x86/index.htm
 #curl -fsSL https://raw.githubusercontent.com/siropboy/other/master/patch/autocore/files/arm/index.htm > package/lean/autocore/files/arm/index.htm
@@ -61,7 +61,7 @@ sed -i 's/解锁网易云灰色歌曲/解锁灰色歌曲/g' package/lean/luci-ap
 sed -i 's/家庭云//g' package/lean/luci-app-familycloud/luasrc/controller/familycloud.lua
 sed -i '/filter_/d' package/network/services/dnsmasq/files/dhcp.conf
 sed -i 's/$(VERSION_DIST_SANITIZED)/$(shell TZ=UTC-8 date +%Y%m%d)-ipv6/g' include/image.mk
-echo "DISTRIB_REVISION='S$(TZ=UTC-8 date +%Y.%m.%d) Sirpdboy '" > ./package/base-files/files/etc/openwrt_release1
+echo "DISTRIB_REVISION='S$(TZ=UTC-8 date +%Y.%m.%d)'" > ./package/base-files/files/etc/openwrt_release1
 sed -i 's/带宽监控/监控/g' feeds/luci/applications/luci-app-nlbwmon/po/zh-cn/nlbwmon.po
 svn co https://github.com/jerrykuku/luci-app-vssr/trunk/  package/new/luci-app-vssr
 svn co https://github.com/siropboy/luci-app-vssr-plustrunk/luci-app-vssr-plus package/new/luci-app-vssr-plus
