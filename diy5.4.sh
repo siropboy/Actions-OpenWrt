@@ -13,14 +13,14 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
-sed -i '$a src-git diy https://github.com/firker/diy-ziyong' feeds.conf.default
+sed -i '$a src-git diy https://github.com/sirpdboy/sirpdboy-package' feeds.conf.default
 # git clone https://github.com/kenzok8/openwrt-packages package/diy
 #git clone https://github.com/sirpdboy/sirpdboy-package package/diy
 #git clone https://github.com/siropboy/luci-app-vssr-plus  package/luci-app-vssr-plus
 # mv -vf ../mt7621_phicomm_k2p.dts ./target/linux/ramips/dts/mt7621_phicomm_k2p.dts
 #　git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 # git clone -b master https://github.com/vernesong/OpenClash.git package/OpenClash
-git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/luci-theme-edge
+# git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/luci-theme-edge
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 #git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
 #git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
