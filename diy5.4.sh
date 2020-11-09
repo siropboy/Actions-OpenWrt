@@ -39,6 +39,6 @@ git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/luc
 # svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray package/v2ray
 # svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray-plugin package/v2ray-plugin
 svn co https://github.com/jerrykuku/luci-app-vssr/trunk/  package/new/luci-app-vssr
-# svn co https://github.com/siropboy/luci-app-vssr-plus/trunk/luci-app-vssr-plus package/new/luci-app-vssr-plus
+#svn co https://github.com/siropboy/luci-app-vssr-plus/trunk/ package/new/luci-app-vssr-plus
 svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/luci-app-passwall
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package package/lienol
