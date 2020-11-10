@@ -21,5 +21,5 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome ./package/
 svn co https://github.com/jerrykuku/luci-app-vssr/trunk/  package/diy/luci-app-vssr
 svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/diy/luci-app-passwall
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package package/diy/lienol
-chmod -R ./feed/diy
-chmod -R ./package/diy
+chmod -R 775 ./feed/diy
+chmod -R 775 ./package/diy
