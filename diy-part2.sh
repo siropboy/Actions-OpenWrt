@@ -38,5 +38,3 @@ sed -i 's/root::0:0:99999:7:::/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999
 sed -i "s/bootstrap/edge/g" feeds/luci/modules/luci-base/root/etc/config/luci
 sed -i 's/bootstrap/edge/g' feeds/luci/collections/luci/Makefile
 ./scripts/feeds update -i
-chmod -R 775 ./feed/diy
-chmod -R 775 ./package/diy
