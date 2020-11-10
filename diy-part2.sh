@@ -11,12 +11,14 @@ rm -rf ./package/lean/luci-theme-argon
 rm -rf ./package/lean/trojan
 rm -rf ./package/lean/v2ray
 rm -rf ./package/lean/v2ray-plugin
-#rm -rf ./package/lean/luci-app-netdata &&svn co https://github.com/siropboy/siropboy-package/trunk/luci-app-netdata ./package/lean/luci-app-netdata
+#rm -rf ./package/lean/luci-app-netdata 
+rm -rf ./package/lean/luci-app-netdata &&svn co https://github.com/siropboy/siropboy-package/trunk/luci-app-netdata ./package/lean/luci-app-netdata
 rm -rf ./package/lean/luci-theme-opentomcat
 #rm -rf ./feeds/packages/admin/netdata &&svn co https://github.com/siropboy/siropboy-package/trunk/netdata ./feeds/packages/admin/netdata
 #rm -rf ./feeds/packages/net/mwan3 &&svn co https://github.com/siropboy/siropboy-package/trunk/mwan3 ./feeds/packages/net/mwan3
 #rm -rf ./feeds/packages/net/https-dns-proxy &&svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy feeds/packages/net/https-dns-proxy
 rm -rf ./package/diy/autocore
+rm -rf ./feed/diy/autocore
 #rm -rf ./feeds/diy/default-settings
 #rm -rf ./package/lean/autocore
 #rm -rf ./package/lean/default-settings
