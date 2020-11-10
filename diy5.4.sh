@@ -14,8 +14,8 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Add a feed source
 sed -i '$a src-git diy https://github.com/sirpdboy/sirpdboy-package' feeds.conf.default
 sed -i 's/coolsnowwolf/sirpdboy/g' ./feeds.conf.default
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/smartdns ./package/new/smartdns
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome ./package/new/adguardhome
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/smartdns ./package/diy/smartdns
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome ./package/diy/adguardhome
 #git clone https://github.com/sirpdboy/sirpdboy-package package/diy
 #git clone https://github.com/siropboy/luci-app-vssr-plus  package/diy/luci-app-vssr-plus
 svn co https://github.com/jerrykuku/luci-app-vssr/trunk/  package/diy/luci-app-vssr
