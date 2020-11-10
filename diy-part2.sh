@@ -19,7 +19,7 @@ rm -rf ./package/lean/luci-app-netdata &&svn co https://github.com/siropboy/siro
 #rm -rf ./feeds/packages/net/https-dns-proxy &&svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy feeds/packages/net/https-dns-proxy
 # rm -rf ./package/diy/autocore
 rm -rf ./feed/diy/autocore
-#rm -rf ./feeds/diy/default-settings
+rm -rf ./feeds/diy/default-settings
 #rm -rf ./package/lean/autocore
 #rm -rf ./package/lean/default-settings
 #curl -fsSL https://raw.githubusercontent.com/siropboy/other/master/patch/autocore/files/x86/index.htm > package/lean/autocore/files/x86/index.htm
@@ -38,3 +38,5 @@ sed -i 's/root::0:0:99999:7:::/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999
 sed -i "s/bootstrap/edge/g" feeds/luci/modules/luci-base/root/etc/config/luci
 sed -i 's/bootstrap/edge/g' feeds/luci/collections/luci/Makefile
 ./scripts/feeds update -i
+chmod -R 775 ./feed/diy
+chmod -R 775 ./package/diy
